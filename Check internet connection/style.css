@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Rubik:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background: #e3f2fd;
+}
+.popup{
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    visibility: hidden;
+    width: 490px;
+    border-radius: 5px;
+    padding: 13px 17px 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+    border-top: 3px solid red;
+    line-height: 2rem;
+    box-shadow: 0 10px 25px rgba(52, 87 ,220 ,0.1);
+    transform: translateX(-50%);
+    transition: all .3s ease;
+}
+.popup.show{
+    visibility: visible;
+    top: 0;
+}
+.popup.online{
+    border-top: 3px solid #2ecc71;
+    border-color: #2ecc71;
+}
+.popup .icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: red;
+}
+.popup.online .icon{
+    background-color: #2ecc71;
+}
+.popup .title{
+    font-size: 2.5rem;
+    margin: 10px 10px; 
+}
+.popup .desc{
+    font-size: 1rem;
+    margin: 10px 10px; 
+}
+.popup .reconnect{
+    padding: 9px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid red;
+    font-size: 0.95rem;
+    font-weight: 500;
+    outline: none;
+    background-color: rgb(245, 9, 9);
+    color: rgb(254, 250, 250);
+}
+.popup.online .reconnect{
+    background: #bfbfbf;
+    border: none;
+    pointer-events: none;
+}
+@media screen and (max-width: 550px) {
+    .popup{
+        width: 350px;
+        padding: 10px 15px 17px ;
+    }
+    .popup .title{
+        font-size: 1.7rem;
+    }
+}

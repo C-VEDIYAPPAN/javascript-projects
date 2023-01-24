@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Rubik:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #dedede;
+}
+.click, .alert-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.click{
+    position: absolute;
+    background-color: rgb(69, 75, 244);
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.click:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.alert-box{
+    user-select: none;
+    width: 500px;
+    background: #f2f2f2;
+    text-align: center;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid #b3b3b3;
+    box-shadow: 10px -10px 13px -9px rgba(87,83,87,1);
+    z-index: 10;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+.alert-box i{
+    font-size: 3rem;
+    color: rgb(205, 75, 75);
+    border: 5px solid #eb9447;
+    padding: 20px 40px;
+    border-radius: 50%;
+    margin: -10px 0 20px 0;
+}
+.alert-box h1{
+    font-size: 30px;
+    color: #1b2631;
+    margin-bottom: 5px;
+    line-height: 2.5rem;
+}
+.alert-box label{
+    font-size: 1rem;
+    color: #383939;
+    margin-bottom: 5px;
+    line-height: 2.5rem;
+}
+.alert-box .btns{
+    margin-top: 40px;
+}
+.btns .btn1, .btn2{
+    background-color: #999999;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid #808080;
+}
+.btns .btn2{
+    background-color: #f19b5e;
+    margin-left: 20px;
+    border: 1px solid #cc0000;
+}
+.btn1:hover{
+    transition: .3s;
+    background: #8c8c8c;
+}
+.btn2:hover{
+    transition: .3s;
+    background: #e60000;
+}
