@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to right top, #d16ba5, #c97fbd, #c093d0, #b8a5de, #b3b5e6, #acc0ef, #a6cbf6, #a2d5fb, #8ddfff, #76e9ff, #63f3fe, #5ffbf1);
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top: 3rem;
+    text-shadow: 4px 2px #727575;
+}
+.wrapper{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 80vmin;
+    padding: 50px 40px;
+    background-color: #93c1f8;
+    border-radius: 5px;
+    box-shadow: 20px 20px 40px rgba(151, 195, 245, 0.4);
+    transform: translate(-50%, -50%);
+}
+.wrapper span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 1rem;
+}
+.wrapper p{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 30px 0;
+    transition: .3s ease-in-out;
+}
+button{
+    display: block;
+    background-color: #85dcf6;
+    border: none;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    margin: 0px auto;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: .3s ease-in;
+}
+button:active{
+    transform: scale(.7);
+}
