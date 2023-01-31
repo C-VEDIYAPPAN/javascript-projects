@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #eff3ff;
+}
+
+.container {
+    width: 350px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+#card {
+    position: relative;
+    background: radial-gradient(circle at 50% 0%, orange 36%, #ffffff 36%);
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#card img {
+    display: block;
+    width: 180px;
+    max-height: 200px;
+    position: relative;
+    margin: 10px auto;
+}
+
+#card .hp {
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+}
+
+.poke-name {
+    text-align: center;
+    font-weight: 600;
+}
+
+.types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+}
+
+.hp span,
+.types span {
+    font-size: 12px;
+    letter-spacing: .4px;
+    font-weight: 600;
+}
+
+.type span {
+    padding:  5px 20px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.stats p{
+    color: #404060;
+}
+#btn{
+    display: block;
+    padding: 15px 60px;
+    font-size: 1.25rem;
+    background-color: #666363;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 3.5rem auto;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    transition: .3s;
+}
+#btn:active{
+    transform: scale(.9);
+}
